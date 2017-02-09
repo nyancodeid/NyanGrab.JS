@@ -2,6 +2,10 @@
 
 NyanGrab adalah web grabber untuk mengambil content atau teks di sebuah website. Nyangrab menggunakan jQuery dan YQL, jadi kamu perlu menambahkan jQuery untuk bisa menggunakan NyanGrab. NyanGrab menggunakan CSS selector.
 
+## Demo
+
+Kamu bisa mencoba NyanGrab.JS disini - [NyanGrab.JS Demo](https://nyancodeid.github.io/example-nyangrab/index.html) 
+
 ## Kelebihan
 
 * Asynchronous Request
