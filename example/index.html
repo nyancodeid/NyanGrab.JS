@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NyanGrab.JS Example</title>
+</head>
+<body>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="nyangrab.js"></script>
+
+	<script type="text/javascript">
+	$(function() {
+		var config = [
+			{
+				url: 'https://www.tokopedia.com/hot',
+				selector: 'div.span4.box.p-10.box-white',
+				loop: true,
+				result: [
+					{
+						name: 'title',
+						find: 'div.mt-5.fs-12.ellipsis',
+						loop: false,
+						grab: {
+							by: 'text',
+							value: '',
+							custom: function(data) {
+								data = data.replace(/a/g, 'b');
+								return data;
+							}
+						}
+					},
+					{
+						name: 'picture',
+						find: 'picture img',
+						loop: false,
+						format: Date() + ' {{data}}',
+						grab: {
+							by: 'attr',
+							value: 'src'
+						}
+					},
+					{
+						name: 'link',
+						find: 'a.hotlist-url',
+						loop: false,
+						grab: {
+							by: 'attr',
+							value: 'href'
+						}
+					},
+					{
+						name: 'harga',
+						find: 'span[itemprop="lowPrice"]',
+						loop: false,
+						format: 'Mulai dari {{data}}',
+						grab: {
+							by: 'text',
+							value: ''
+						}
+					},
+
+				]
+			},
+			
+		];
+
+		$.nyangrab(config, function(results) {
+			document.write('<pre>' + JSON.stringify(results, null, 2) + '</pre>');
+		});
+	});
+	</script>
+</body>
+</html>
