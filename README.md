@@ -93,21 +93,21 @@ Berikut penjelasan mengenai syntax penggunaan nya
 
 ```javascript
 var config = [
+	{
+		url: 'http://example.com/',
+		selector: 'div.box-content',
+		loop: true,
+		result: [
 			{
-				url: 'http://example.com/',
-				selector: 'div.box-content',
-				loop: true,
-				result: [
-					{
-						name: 'title',
-						find: 'h1.title',
-						loop: false,
-						grab: {
-							by: 'text',
-							value: '',
-						}
-					}, 
-        ]
+				name: 'title',
+				find: 'h1.title',
+				loop: false,
+				grab: {
+					by: 'text',
+					value: '',
+				}
+			}, 
+       	 	]
       },
 ];
 $.nyangrab(config, function(results) {
