@@ -8,6 +8,13 @@ NyanGrab adalah web grabber untuk mengambil content atau teks di sebuah website.
 * Flexibel
 * Full Custom
 
+## Version
+
+
+| Version      | Tanggal       | Log    |
+| :------------- | :--------- | :------------- | 
+| `1.0.0`          | `Thursday, 09 February 2017`   | Versi pertama NyanGrab.JS |
+
 ## Require
 
 NyanGrab.JS membutuhkan jQuery untuk menjalankannya.
