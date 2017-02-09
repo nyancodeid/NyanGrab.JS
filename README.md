@@ -1,15 +1,19 @@
 # NyanGrab.JS
+
 NyanGrab adalah web grabber untuk mengambil content atau teks di sebuah website. Nyangrab menggunakan jQuery dan YQL, jadi kamu perlu menambahkan jQuery untuk bisa menggunakan NyanGrab. NyanGrab menggunakan CSS selector.
 
 ## Kelebihan
+
 * Asynchronous Request
 * Flexibel
 * Full Custom
 
 ## Require
+
 NyanGrab.JS membutuhkan jQuery untuk menjalankannya.
 
 ## Installation
+
 Untuk installasi NyanGrab bisa dibilang mudah karena hanya menambahkan code dibawah ini di atas tag `</body>`.
 
 ```html
@@ -17,6 +21,7 @@ Untuk installasi NyanGrab bisa dibilang mudah karena hanya menambahkan code diba
 ```
 
 ## Usage
+
 Berikut adalah contoh penggunaan NyanGrab.JS yang sangat mudah dan flexibel
 
 ```javascript
@@ -83,6 +88,7 @@ $(function() {
 ```
 
 ## Penjelasan
+
 Berikut penjelasan mengenai syntax penggunaan nya
 
 ```javascript
@@ -110,6 +116,7 @@ $.nyangrab(config, function(results) {
 ```
 
 ### Sekilas
+
 | Attribute      | Type       | Description    | Example    |
 | :------------- | :--------- | :------------- | :--------- |
 | `url`          | `string`   | url adalah alamat website yang dikehendaki. | 'http://example.com' |
@@ -121,6 +128,7 @@ $.nyangrab(config, function(results) {
 | `value`        | `string`   | Value untuk `grab`.`by` attr dan data   | 'href'   |
 
 ## Rincian untuk `grab`
+
 Berikut adalah rincian value untuk attribut `grab` : 
 
 | Attribute      | Type       | Value    | Penjelasan    |
@@ -130,5 +138,12 @@ Berikut adalah rincian value untuk attribut `grab` :
 | `val`         | `string`   | `null`  | val (Value) digunakan jika content grab yang kita kehendaki berupa textarea. |
 | `attr`        | `string`   | `attribut element` | attr (Attribute) digunakan jika content grab yang kita kehendaki di dalam attribut sebuah elemen html |
 
+## License
 
+This software is provided free of charge and without restriction under the [MIT License](LICENSE)
+
+## Author
+
+Ryan Aunur Rassyid
+Build with Love in Jombang, East Java, Indonesia 
 
