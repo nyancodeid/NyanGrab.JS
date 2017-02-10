@@ -19,7 +19,7 @@
         $.each(config, function(i, f) {
             var d = '';
             $.ajax({
-                url: 'https://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('SELECT content FROM data.headers WHERE url="' + f.url + '" and ua="Googlebot/2.1 (http://www.googlebot.com/bot.html)"') + '&format=xml&env=http://datatables.org/alltables.env',
+                url: 'https://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select content from data.headers where url="' + f.url + '"') + '&format=xml&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys',
                 async: true
             }).done(function(a) {
                 printDebug('Prosessing Response');
