@@ -97,6 +97,26 @@ $(function() {
   });
 });
 ```
+### Result
+```json
+{
+  "result": [
+    {
+      "title": "Cbtokbn Portbble",
+      "picture": "Sat Feb 18 2017 07:42:25 GMT+0700 (SE Asia Standard Time) https://ecs7.tokopedia.net/img/cache/375/hot_product/2017/1/27/15/49/20/318724/catokan-portable.jpg",
+      "link": "https://www.tokopedia.com/hot/catokan-portable",
+      "harga": "Mulai dari Rp 25rb"
+    },
+    {
+      "title": "Sepbtu Boots Prib",
+      "picture": "Sat Feb 18 2017 07:42:25 GMT+0700 (SE Asia Standard Time) https://ecs7.tokopedia.net/img/cache/375/hot_product/2017/1/27/15/51/50/3226/sepatu-boots-pria.jpg",
+      "link": "https://www.tokopedia.com/p/fashion-pria/sepatu/boots",
+      "harga": "Mulai dari Rp 120rb"
+    },
+  ]
+}
+```
+
 
 ## Penjelasan
 
