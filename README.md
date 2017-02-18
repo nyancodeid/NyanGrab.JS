@@ -51,6 +51,7 @@ $(function() {
             by: 'text', /* tipe grab */
             value: '', 
             custom: function(data) {
+	      /* Do something with data */
               data = data.replace(/a/g, 'b');
               return data;
             } /* Custom function untuk memprosess item */
@@ -168,6 +169,25 @@ Berikut adalah rincian value untuk attribut `grab` :
 | `html`         | `string`   | `null`  | html digunakan jika content grab yang kita kehendaki berupa script html lengkap. Misalnya kamu ingin grab content post yang yang format html nya `<div id="post"><h1>Judul</h1><p>ini content post</p></div>` tentunya kamu ingin mengambil  `<h1>Judul</h1><p>ini content post</p>` bukan. 
 | `val`         | `string`   | `null`  | val (Value) digunakan jika content grab yang kita kehendaki berupa textarea. |
 | `attr`        | `string`   | `attribut element` | attr (Attribute) digunakan jika content grab yang kita kehendaki di dalam attribut sebuah elemen html |
+
+## Attribut `format`
+
+Attribut `format` untuk memformat data yang akan ditampilkan, mengubah hasil output.
+
+### Syntax
+```javascript
+format: 'attribut or text',
+```
+
+### Example
+```javascript
+format: Date() + ' {{data}}', /* Results: Sat Feb 18 2017 07:42:25 GMT+0700 (SE Asia Standard Time) Hasil Grabing */
+```
+
+| Attribute      | Penjelasan    |
+| :------------- | :--------- |
+| `{{data}}` | hasil output original |
+| `{{index:num}}` | index (urutan mulai dari 1) | 
 
 ## License
 
