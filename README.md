@@ -193,8 +193,18 @@ format: Date() + ' {{data}}', /* Results: Sat Feb 18 2017 07:42:25 GMT+0700 (SE 
 
 This software is provided free of charge and without restriction under the [MIT License](LICENSE)
 
-## Author
+## Authors
 
-Ryan Aunur Rassyid
+**Ryan Aunur Rassyid**
+
++ <https://www.facebook.com/ryan.hac>
++ <https://github.com/nyancodeid>
+
+**Ican Bachors**
+
++ <https://www.facebook.com/ican.bachors>
++ <http://github.com/bachors>
+
+
 Build with Love in Jombang, East Java, Indonesia 
 
