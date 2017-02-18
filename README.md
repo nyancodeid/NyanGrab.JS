@@ -79,7 +79,7 @@ $(function() {
           name: 'harga',
           find: 'span[itemprop="lowPrice"]',
           loop: false,
-          format: 'Mulai dari {{data}}',
+          format: 'Mulai dari {{data}}', /* Memformat hasil grabbing */
           grab: {
             by: 'text',
             value: ''
