@@ -181,6 +181,10 @@ format: 'attribut or text',
 
 ### Example
 ```javascript
+format: 'Tanggal {{data}}', /* Results: Tanggal 27 */
+
+format: 'Harga tahun ini adalah {{data}} untuk produk no. {{index:num}}' /* Results: Harga tahun ini adalah Rp. 24.000 untuk product no. 1 */
+
 format: Date() + ' {{data}}', /* Results: Sat Feb 18 2017 07:42:25 GMT+0700 (SE Asia Standard Time) Hasil Grabing */
 ```
 
