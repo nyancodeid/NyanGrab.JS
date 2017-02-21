@@ -54,6 +54,10 @@
                                 } else if (v.grab.by == 'attr') {
                                     b = qw.attr(v.grab.value)
                                 }
+                                /* Replace */
+                                if (v.replace != null || v.replace != undefined) {
+                                    b = replaceAll(b, v.replace[0], v.replace[1]);
+                                }
                                 /* Format using string */
                                 if (v.format != undefined) {
                                     var r;
@@ -94,6 +98,9 @@
                                     } else if (v.grab.by == 'attr') {
                                         b = k.attr(v.grab.value)
                                     }
+                                    if (v.replace != null || v.replace != undefined) {
+                                        b = replaceAll(b, v.replace[0], v.replace[1]);
+                                    }
                                     if (v.format != undefined) {
                                         var r;
                                         r = r.replace('{{data}}', b);
@@ -123,7 +130,7 @@
                                 }
                             }
                             if (v.replace != null || v.replace != undefined) {
-                                b = b.replace(v.replace[0], v.replace[1])
+                                b = replaceAll(b, v.replace[0], v.replace[1]);
                             }
                             if (v.format != undefined) {
                                 var r;
@@ -159,6 +166,11 @@
             b.find("iframe").remove();
             b.find("embed").remove();
             return b.html()
+        }
+        
+        /* Replace All */
+        function replaceAll(str, find, replace) {
+          return str.replace(new RegExp(find, 'g'), replace);
         }
 
         function printDebug(msg) {
