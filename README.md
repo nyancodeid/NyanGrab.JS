@@ -153,7 +153,7 @@ $.nyangrab(config, function(results) {
 
 | Attribute      | Type       | Description    | Example    |
 | :------------- | :--------- | :------------- | :--------- |
-| `url`          | `string`   | url adalah alamat website yang dikehendaki. | 'http://example.com' / 'http://example.com,http://example.com/another' |
+| `url`          | `string`   | url adalah alamat website yang dikehendaki. | 'http://example.com' atau 'http://example.com,http://example.com/another' |
 | `selector`     | `string`   | CSS selector untuk content yang akan di grab | 'div.main-content' |
 | `loop`         | `boolean`  | untuk content atau item yang perlu di perulangan | `true`   |
 | `result`       | `array`    | `important` penampung items items   |   |
