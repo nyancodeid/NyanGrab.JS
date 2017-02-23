@@ -18,6 +18,8 @@ Kamu bisa mencoba NyanGrab.JS disini - [NyanGrab.JS Demo](https://nyancodeid.git
 | Version      | Tanggal       | Log    |
 | :------------- | :--------- | :------------- | 
 | `1.0.0`          | `Thursday, 09 February 2017`   | Versi pertama NyanGrab.JS |
+| `1.0.4`          | `Thursday, 22 February 2017`   | Add Attribut `format`, Fix |
+| `1.1.0`          | `Thursday, 23 February 2017`   | URL lebih dari 1 dengan config yang sama, Fix |
 
 ## Require
 
@@ -151,7 +153,7 @@ $.nyangrab(config, function(results) {
 
 | Attribute      | Type       | Description    | Example    |
 | :------------- | :--------- | :------------- | :--------- |
-| `url`          | `string`   | url adalah alamat website yang dikehendaki. | 'http://example.com' |
+| `url`          | `string`   | url adalah alamat website yang dikehendaki. | 'http://example.com' / 'http://example.com,http://example.com/another' |
 | `selector`     | `string`   | CSS selector untuk content yang akan di grab | 'div.main-content' |
 | `loop`         | `boolean`  | untuk content atau item yang perlu di perulangan | `true`   |
 | `result`       | `array`    | `important` penampung items items   |   |
